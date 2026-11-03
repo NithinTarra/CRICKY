@@ -1,0 +1,174 @@
+.hero-section {
+  width: 84%;
+  max-width: 1400px;
+  min-height: 440px;
+
+  margin: 45px auto;
+
+  padding: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(
+    110deg,
+    #18251a,
+    #101812 65%,
+    #20361a
+  );
+
+  border: 1px solid #263b29;
+  border-radius: 18px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-label {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero-content h1 {
+  margin-top: 25px;
+
+  font-size: clamp(42px, 5vw, 65px);
+  font-weight: 900;
+  line-height: 1.12;
+}
+
+.hero-content h1 span {
+  color: var(--accent);
+}
+
+.hero-content p {
+  margin-top: 22px;
+
+  max-width: 480px;
+
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.hero-button {
+  display: inline-block;
+
+  margin-top: 28px;
+  padding: 15px 23px;
+
+  background: var(--accent);
+  color: #10170b;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background: var(--accent-dark);
+  transform: translateY(-3px);
+}
+
+.hero-visual {
+  width: 320px;
+  height: 320px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    #b6f34a22,
+    transparent 70%
+  );
+}
+
+.cricket-ball {
+  font-size: 150px;
+  filter: drop-shadow(0 0 30px #b6f34a33);
+}
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    width: 90%;
+    padding: 40px 25px;
+    min-height: 400px;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 43px;
+  }
+}
+.matches-section {
+  width: 84%;
+  max-width: 1400px;
+  margin: 75px auto;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.section-label {
+  color: #b6f34a;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.section-heading h2 {
+  margin-top: 9px;
+  font-size: 28px;
+}
+
+.section-heading a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #b6f34a;
+  font-size: 13px;
+}
+
+.match-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .match-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .matches-section {
+    width: 90%;
+  }
+
+  .match-grid {
+    grid-template-columns: 1fr;
+  }
+}

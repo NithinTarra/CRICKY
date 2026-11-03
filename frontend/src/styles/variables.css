@@ -1,0 +1,18 @@
+:root {
+  --bg-primary: #090d0b;
+  --bg-secondary: #111813;
+  --bg-card: #151e17;
+
+  --accent: #b6f34a;
+  --accent-dark: #91ce32;
+
+  --text-primary: #ffffff;
+  --text-secondary: #a1aaa3;
+  --text-muted: #69756d;
+
+  --border-color: #263129;
+
+  --font-primary: 'Inter', sans-serif;
+
+  --container-width: 1200px;
+}
